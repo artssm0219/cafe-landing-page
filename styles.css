@@ -5,7 +5,6 @@
   --leaf-dark: #173f32;
   --coffee: #78543b;
   --clay: #bc694f;
-  --cream: #f8f1e4;
   --paper: #fffaf0;
   --mint: #e3efe4;
   --line: #ded1be;
@@ -719,6 +718,7 @@ dd {
 
 .contact-form {
   display: grid;
+  scroll-margin-top: calc(var(--header-height) + 24px);
   padding: 24px;
   gap: 12px;
   color: var(--ink);
