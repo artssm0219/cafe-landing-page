@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Komorebi Cafeは、木漏れ日と焼き菓子の香りを楽しむ架空カフェのランディングページです。"
+    />
+    <title>Komorebi Cafe | 架空カフェLP</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へスキップ</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#hero" aria-label="Komorebi Cafe ホーム">
+          <span class="brand-mark" aria-hidden="true">K</span>
+          <span class="brand-name">Komorebi Cafe</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="メニューを開く"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          data-nav-toggle
+        >
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+
+        <nav
+          class="site-nav"
+          id="primary-navigation"
+          aria-label="主要ナビゲーション"
+        >
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#access">Access</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="section-inner hero__inner">
+          <p class="eyebrow">Small roasted coffee and bake shop</p>
+          <h1 id="hero-title">Komorebi Cafe</h1>
+          <p class="hero__lead">
+            木漏れ日が差し込む小さな路地で、自家焙煎コーヒーと季節の焼き菓子をゆっくり味わう架空カフェです。
+          </p>
+          <div class="hero__actions" aria-label="主要な導線">
+            <a class="button button--primary" href="#menu">メニューを見る</a>
+            <a class="button button--secondary" href="#access">アクセスを見る</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="steam steam--one"></div>
+          <div class="steam steam--two"></div>
+          <div class="cup">
+            <div class="cup__body"></div>
+            <div class="cup__handle"></div>
+          </div>
+          <div class="saucer"></div>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="section-inner about__grid">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">静かな時間を、日々の近くに。</h2>
+            <p>
+              Komorebi Cafeは、朝の一杯から午後のひと休みまで、肩の力を抜いて過ごせる場所を目指した架空のカフェです。
+              コーヒーの香り、焼き菓子の甘さ、窓辺の明るさが、忙しい日常に小さな余白をつくります。
+            </p>
+          </div>
+
+          <div class="about-notes" aria-label="カフェの特徴">
+            <dl>
+              <div>
+                <dt>Roast</dt>
+                <dd>香ばしさと飲みやすさを大切にした自家焙煎</dd>
+              </div>
+              <div>
+                <dt>Bake</dt>
+                <dd>季節の果物やナッツを使った焼き菓子</dd>
+              </div>
+              <div>
+                <dt>Seat</dt>
+                <dd>ひとりでも会話でも使いやすい落ち着いた席</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu" id="menu" aria-labelledby="menu-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Menu</p>
+            <h2 id="menu-title">香りと焼きたてを楽しむメニュー</h2>
+            <p>
+              価格と内容はすべて架空です。朝にも午後にも選びやすい、シンプルなラインナップにしています。
+            </p>
+          </div>
+
+          <div class="menu-grid">
+            <article class="menu-card" aria-labelledby="drink-menu-title">
+              <h3 id="drink-menu-title">Drinks</h3>
+              <ul class="menu-list">
+                <li>
+                  <span>
+                    <strong>こもれびブレンド</strong>
+                    <small>ナッツのような香ばしさ</small>
+                  </span>
+                  <span>650円</span>
+                </li>
+                <li>
+                  <span>
+                    <strong>カフェラテ</strong>
+                    <small>まろやかなミルク仕立て</small>
+                  </span>
+                  <span>700円</span>
+                </li>
+                <li>
+                  <span>
+                    <strong>季節のハーブティー</strong>
+                    <small>すっきり軽い香り</small>
+                  </span>
+                  <span>680円</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="menu-card" aria-labelledby="food-menu-title">
+              <h3 id="food-menu-title">Foods</h3>
+              <ul class="menu-list">
+                <li>
+                  <span>
+                    <strong>焼きたてスコーン</strong>
+                    <small>自家製ジャム添え</small>
+                  </span>
+                  <span>520円</span>
+                </li>
+                <li>
+                  <span>
+                    <strong>季節のチーズケーキ</strong>
+                    <small>果実の酸味をひとさじ</small>
+                  </span>
+                  <span>760円</span>
+                </li>
+                <li>
+                  <span>
+                    <strong>クロックムッシュ</strong>
+                    <small>軽めのランチに</small>
+                  </span>
+                  <span>980円</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section features"
+        id="features"
+        aria-labelledby="features-title"
+      >
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Features</p>
+            <h2 id="features-title">Komorebi Cafeの3つのこだわり</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-number" aria-hidden="true">01</span>
+              <h3>自家焙煎の豆</h3>
+              <p>
+                酸味とコクのバランスを見ながら、毎日飲みたくなる味を目指します。
+              </p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-number" aria-hidden="true">02</span>
+              <h3>季節の焼き菓子</h3>
+              <p>
+                旬の素材を使い、コーヒーと合わせて楽しめるやさしい甘さに仕上げます。
+              </p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-number" aria-hidden="true">03</span>
+              <h3>過ごしやすい席</h3>
+              <p>
+                読書、作業、会話のどれにもなじむ、ほどよい距離感の空間を整えます。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section access" id="access" aria-labelledby="access-title">
+        <div class="section-inner access__grid">
+          <div>
+            <p class="eyebrow">Access</p>
+            <h2 id="access-title">路地の先にある、小さな寄り道。</h2>
+            <p>
+              住所や駅名はすべて架空です。LPの表示練習用として、実在の店舗情報ではない形で掲載しています。
+            </p>
+
+            <dl class="access-list">
+              <div>
+                <dt>営業時間</dt>
+                <dd>8:00 - 19:00</dd>
+              </div>
+              <div>
+                <dt>定休日</dt>
+                <dd>水曜日</dd>
+              </div>
+              <div>
+                <dt>住所</dt>
+                <dd>東京都みどり区こもれび町 1-2-3</dd>
+              </div>
+              <div>
+                <dt>アクセス</dt>
+                <dd>こもれび駅 南口から徒歩5分</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div
+            class="map-panel"
+            role="img"
+            aria-label="架空のカフェ周辺を表した装飾的な案内図"
+          >
+            <span class="map-panel__station">こもれび駅</span>
+            <span class="map-panel__shop">Komorebi Cafe</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section contact"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="section-inner contact__grid">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">予約・問い合わせの導線</h2>
+            <p>
+              フォームは見た目だけのデモです。入力内容は送信されず、外部サービスにも接続しません。
+            </p>
+            <a class="button button--primary" href="#contact-form">
+              予約内容を入力する
+            </a>
+          </div>
+
+          <form
+            class="contact-form"
+            id="contact-form"
+            aria-describedby="contact-note form-status"
+            novalidate
+            data-demo-form
+          >
+            <p class="form-note" id="contact-note">
+              デモ用フォームのため、実際の予約や問い合わせは完了しません。
+            </p>
+
+            <label for="topic">ご用件</label>
+            <select id="topic" name="topic">
+              <option value="reservation">席の予約について</option>
+              <option value="menu">メニューについて</option>
+              <option value="other">その他の問い合わせ</option>
+            </select>
+
+            <label for="guests">人数</label>
+            <select id="guests" name="guests">
+              <option value="1">1名</option>
+              <option value="2">2名</option>
+              <option value="3">3名</option>
+              <option value="4">4名</option>
+            </select>
+
+            <label for="time">希望時間帯</label>
+            <select id="time" name="time">
+              <option value="morning">午前</option>
+              <option value="afternoon">午後</option>
+              <option value="evening">夕方</option>
+            </select>
+
+            <label for="message">メッセージ</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="例: 窓際の席が空いていれば希望します"
+            ></textarea>
+
+            <button
+              class="button button--primary"
+              type="button"
+              data-demo-button
+            >
+              送信せずに確認する
+            </button>
+            <p class="form-status" id="form-status" role="status" hidden></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer__inner">
+        <p class="footer-brand">Komorebi Cafe</p>
+        <nav aria-label="フッターナビゲーション">
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#access">Access</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <small>&copy; 2026 Komorebi Cafe. Fictional demo site.</small>
+      </div>
+    </footer>
+  </body>
+</html>
