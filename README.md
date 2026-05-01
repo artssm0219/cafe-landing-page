@@ -68,4 +68,4 @@ python3 -m http.server 8000
 
 ## 公開URL
 
-未設定
+https://artssm0219.github.io/cafe-landing-page/
